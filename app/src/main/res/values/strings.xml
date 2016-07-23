@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Music Event 1</string>
+    <string name="action_settings">Settings</string>
+    <string name="change_location">Change City</string>
+    <string name="website"></string>
+    <string name="title_activity_activity_event_details">ActivityEventDetails</string>
+</resources>

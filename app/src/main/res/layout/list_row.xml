@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/emptybox"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_width="120dp"
+        android:id="@+id/bandImageId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_height="120dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/headLinerTextId"
+        android:layout_below="@+id/bandImageId"
+        android:text="Headliner"
+        android:textStyle="bold"
+        android:textColor="#0d0a0a"
+        android:textSize="19sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/venueTextId"
+        android:layout_below="@+id/headLinerTextId"
+        android:text="Venue"
+        android:textStyle="normal"
+        android:textColor="#292926"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/whenTextId"
+        android:layout_below="@+id/venueTextId"
+        android:text="When"
+        android:textStyle="normal"
+        android:textColor="#292926"
+        android:textSize="15sp"
+android:layout_centerHorizontal="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:background="#e7090909"
+        android:backgroundTint="#080505"
+        android:layout_width="wrap_content"
+        android:id="@+id/whereTextId"
+        android:layout_below="@+id/whenTextId"
+        android:text="Where"
+        android:textStyle="italic"
+        android:textColor="#e1e1cf"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content" />
+
+
+
+
+</RelativeLayout>
