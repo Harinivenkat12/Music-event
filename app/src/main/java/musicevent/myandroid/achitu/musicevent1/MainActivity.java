@@ -96,6 +96,9 @@ public class MainActivity extends AppCompatActivity {
 
                         JSONObject linkObj = eventsArray.getJSONObject(i);
                         String link = linkObj.getString("link");
+                        String linkToWebsite= "http://www.ticketfly.com"+link.replaceFirst("events","event");
+
+                        Log.v("Link to Website:" ,linkToWebsite);
 
                         //getting title of music events from tf api
                         JSONObject titleObj = eventsArray.getJSONObject(i);
@@ -108,9 +111,9 @@ public class MainActivity extends AppCompatActivity {
                         String actualImage = imageObject.getString("imageUrl");
 
                         //get website link from tf api
-                        String websiteURL = "https://api.ticketfly.com/v2";
-                        websiteURL = websiteURL + link;
-                        Log.v("Website: ", websiteURL);
+                       // String websiteURL = "https://api.ticketfly.com/v2";
+                        //websiteURL = websiteURL + link;
+                        //Log.v("Website: ", websiteURL);
 
 
                         //get address from api
@@ -131,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
 
                         event.setTimeZone(timeZone);
                         event.setStartDate(time);
-                        event.setWebsite(link);
+                        event.setWebsite(linkToWebsite);
                         event.setCity(city);
                         event.setHeadLiner(venueName);
                         event.setVenueName(venueName);
@@ -141,7 +144,7 @@ public class MainActivity extends AppCompatActivity {
                         event.setPostalCode(postalCode);
                         event.setCountryCode(countryCode);
                         event.setUrl(actualImage);
-                        event.setWebsite(websiteURL);
+
 
                         events.add(event);
 
